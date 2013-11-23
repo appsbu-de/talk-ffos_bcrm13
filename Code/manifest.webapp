@@ -1,0 +1,8 @@
+{
+  "version": "1",
+  "permissions": {
+    "desktop-notification": {
+      "description": "To show notifications"
+    }
+  }
+}

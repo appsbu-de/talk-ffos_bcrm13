@@ -1,0 +1,78 @@
+body, html {
+    font-family:HelveticaNeue, arial, helvetica, clean, sans-serif;
+    font-size: 20px;
+    height:100%;
+    margin:0;
+    padding:0;
+
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+.title {
+    text-align: left;
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+    padding: 200px 0;
+
+    font-size:600%;
+}
+
+@-moz-keyframes toGreyLight {
+
+    100% {
+        background: #999;
+        color: #000;
+    }
+}
+
+@-moz-keyframes toGreyMedium {
+
+    100% {
+        background: #666;
+        color: #000;
+    }
+}
+
+@-moz-keyframes toGreyDark {
+
+    100% {
+        background: #333;
+        color: #fff;
+    }
+}
+
+@-moz-keyframes toSunshine {
+
+    100% {
+        background: #fff470;
+        color: #000;
+    }
+}
+
+.grey_light {
+    animation: toGreyLight 2s linear;
+    -moz-animation-fill-mode:forwards;
+}
+
+.grey_medium {
+    animation: toGreyMedium 2s linear;
+    -moz-animation-fill-mode:forwards;
+}
+
+.grey_dark {
+    animation: toGreyDark 2s linear;
+    -moz-animation-fill-mode:forwards;
+}
+
+.grey_sunshine {
+    animation: toSunshine 2s linear;
+    -moz-animation-fill-mode:forwards;
+}
+
