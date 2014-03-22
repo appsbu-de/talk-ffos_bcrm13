@@ -1,5 +1,5 @@
 var notificationData = {
-    title: "Hallo BCRM!",
+    title: "Hallo #DCKA14!",
     body: "Schön hier!"
 };
 
@@ -8,5 +8,5 @@ function showNotification() {
     var notification = new Notification(notificationData.title, {
         body: notificationData.body
     });
-    notification.show();
+    //notification.show();
 }
