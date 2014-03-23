@@ -11,14 +11,15 @@
         blocked = false;
 
     var animendFunction = function() {
-        coverElement.style = 'background-color: ' + shadesOfGrey[actualShading][1];
 
+        coverElement.style = 'background-color: ' + shadesOfGrey[actualShading][1];
         coverElement.removeEventListener('animationend', animendFunction);
 
         blocked = false;
     };
 
     window.ondevicelight = function(event) {
+
         var lux = event.value || 130;
 
         if (lux < shadesOfGrey.dark[0]) {
@@ -33,6 +34,7 @@
     };
 
     function setShadeOfGrey(shade) {
+        
         if (actualShading !== shade && !blocked) {
             coverElement.className = baseClassName + ' grey_' + shade;
             actualShading = shade;
